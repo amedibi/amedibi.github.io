@@ -5,3 +5,14 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+$(document).ready(function() {
+    $("#language-toggle").on("click", function() {
+        if ($(this).is(":checked")) {
+            $("#jp-content").hide();
+            $("#en-content").show();
+        } else {
+            $("#jp-content").show();
+            $("#en-content").hide();
+        }
+    });
+});

@@ -17,12 +17,19 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container px-5">
                 <a class="navbar-brand" href="#page-bottom">Portfolio</a>
+				<div class="switch">
+					<input id="language-toggle" class="switch-language check-toggle check-toggle-round-flat" type="checkbox">
+					<label for="language-toggle"></label>
+					<span class="on">日本語</span>
+					<span class="off">ENG</span>
+				</div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
@@ -32,13 +39,94 @@
                 </div>
             </div>
         </nav>
-        <!-- Header-->
+		<!-- Header-->
+		
+		<div class="language" id="jp-content">
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">DMで依頼</h1> <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER-->
+                    <h2 class="masthead-subheading mb-0">空いている依頼枠：</h2>
+					<h1 class="masthead-heading mb-0">1枠</h1>
+                </div>
+            </div>
+			<div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section>
+            <div class="container-fluid px-5">
+                <div class="row gx-0 align-items-center">
+				    <div class="col-lg-4 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-6">バスト/上半身</h2>
+                            <p>作業時間 1-14日　イラストの細かさによる<br>4500円</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-2">
+                        <div class=" p-2">
+						<img class="img-thumbnail " src="assets\img\04.jpg" alt="..." />
+						</div>
+                    </div>
+					<div class="col-lg-4 order-lg-2">
+                        <div class=" p-2">
+						<img class="img-thumbnail " src="assets\img\01.jpg" alt="..." />
+						</div>
+                    </div>
+				</div>
+			</div>	
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container-fluid px-5">
+                <div class="row gx-0 align-items-center">
+					<div class="col-lg-4 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">全身/下半身込み</h2>
+                            <p>作業時間 1-28日　イラストの細かさによる<br>8000円</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-1">
+                        <div class=" p-2">
+						<img class="img-thumbnail " src="assets\img\02.jpg" alt="..." />
+						</div>
+                    </div>
+					<div class="col-lg-4 order-lg-1">
+                        <div class=" p-2">
+						<img class="img-thumbnail " src="assets\img\03.jpg" alt="..." />
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    
+                    
+                        
+                            <h2 class="display-6 text-md-center">詳細・Terms</h2>
+                            <p>複雑なポーズと背景またはキャラの数が多い場合はご相談からにして、問題がなければ進みます。<br>センシティブも一応可能になっております、 キャラデザインの間違い以外のリテイクは断り或いは追加料金かかります。<br>お支払いは依頼者が下描きを確認した後にします<br>支払方法はKo-Fi/PAYPALでお願いします。<br>
+								<br>SNSのリンクが右上に張ってるので是非お確認してみてください！<br>
+							</p>
+							<h2 class="display-7 text-center"> 投げ銭をしたい方はこちらで：<br><a href="https://ko-fi.com/amedibi" rel="noopener" target="_blank" >ko-fi &#9749;</a><br></h2>
+                        
+                    
+                </div>
+            </div>
+        </section>
+		</div>
+		
+		<div class="language" id="en-content" style="display:none;">
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">DMで依頼・DM for Commission</h1> <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER-->
                     <h2 class="masthead-subheading mb-0">空いている依頼枠・Available Slots：</h2>
-					<h1 class="masthead-heading mb-0">1枠</h1>
+					<h1 class="masthead-heading mb-0">1枠・1 Slot(s)</h1>
                 </div>
             </div>
 			<div class="bg-circle-1 bg-circle"></div>
@@ -67,7 +155,8 @@
 						<img class="img-thumbnail " src="assets\img\01.jpg" alt="..." />
 						</div>
                     </div>
-            </div>
+				</div>
+			</div>	
         </section>
         <!-- Content section 2-->
         <section>
@@ -114,6 +203,7 @@
                 </div>
             </div>
         </section>
+		</div>
 		
         <!-- Footer-->
         <footer id="page-bottom" class="py-5 bg-pink">
